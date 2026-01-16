@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="m-14 font-mono">
+    <div className="m-6 md:m-14 font-mono">
       <div className="text-sm leading-none font-medium font-mono flex items-center gap-1">
         <>
           <span
