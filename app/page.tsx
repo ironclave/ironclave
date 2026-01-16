@@ -3,7 +3,19 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="m-14 font-mono">
-      <div className="text-sm leading-none font-medium font-mono">
+      <div className="text-sm leading-none font-medium font-mono flex items-center gap-1">
+        <>
+          <span
+            className="inline-block h-4 w-4 rounded-full bg-current mr-2"
+            style={{ animation: "dotScale 2s ease-in-out infinite" }}
+          />
+          <style>{`
+                @keyframes dotScale {
+                  0%, 100% { transform: scale(0.8); }
+                  50%      { transform: scale(1); }
+                }
+              `}</style>
+        </>
         <Link
           href="https://ironclave.com"
           className="text-accent-foreground underline underline-offset-4"
@@ -20,7 +32,7 @@ export default function Home() {
         </Link>{" "}
         /{" "}
         <Link
-          href="https://github.com/ironclave"
+          href="https://github.com/micksmits"
           className="text-accent-foreground underline underline-offset-4"
           target="_blank"
         >
@@ -28,10 +40,7 @@ export default function Home() {
         </Link>
       </div>
       <div className="text-md leading-6 font-medium mt-8 max-w-2xl">
-        Ironclave builds products that look good, feel good, and tackle real
-        problems. We care about detail and creating experiences people trust.
-        The goal is simple: craft beautiful apps that solve something real and
-        raise standards.
+        Ironclave builds products on the internet.
       </div>
       <div className="max-w-sm mt-8">
         <h4 className="scroll-m-20 text-lg font-medium tracking-tight">
